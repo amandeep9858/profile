@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d3d3d3;
+    font-family: Arial, sans-serif;
+}
+
+.profile-card {
+    width: 3.5in;
+    height: 2in;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-image {
+    margin-bottom: 10px;
+}
+
+.profile-image img {
+    width: 2cm;
+    height: 2cm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #008CBA;
+}
+
+.profile-details h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.profile-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005f73;
+}
+
+a.btn {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}

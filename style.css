@@ -1,0 +1,363 @@
+/* CSS Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    width: 25%;
+    background-color: #000;  /* Black background for left side */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.left-img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-box {
+    position: relative;
+    background-color: #262626;
+    padding: 15px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.img-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.name-role p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.name-role .role {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.sidebar ul li strong {
+    color: #fff;
+}
+
+.sidebar ul li span {
+    color: #ccc;
+}
+
+.section-divider {
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+.languages {
+    margin-top: 20px;
+}
+
+.pie-chart-container {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+}
+
+.pie-chart {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.language-bar {
+    margin: 10px 0;
+}
+
+.language-bar span {
+    display: inline-block;
+    width: 120px;
+    font-size: 0.9rem;
+}
+
+.language-bar .bar {
+    display: inline-block;
+    width: 80%;
+    height: 10px;
+    position: relative;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.language-bar .bar span {
+    position: absolute;
+    right: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    top: -20px;
+}
+
+.language-bar.html .bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 90%;
+    background-color: #008cba;
+}
+
+.language-bar.css .bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 75%;
+    background-color: #008cba;
+}
+
+.language-bar.js .bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 70%;
+    background-color: #008cba;
+}
+
+.language-bar.php .bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 80%;
+    background-color: #008cba;
+}
+
+.language-bar.java .bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 70%;
+    background-color: #008cba;
+}
+
+.download-cv {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-cv a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.download-cv a:hover {
+    color: #008cba;
+}
+
+.right {
+    width: 75%;
+    background-color: #fff;  /* White background for right side */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 8.5cm;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.header-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navigation {
+    background-color: #008cba;  /* Keep the background color */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);  /* Glow effect */
+}
+
+.navigation a.active {
+    color: #b0b0b0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.content {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content.active {
+    background-color: #e3f2fd;
+    border-left: 5px solid #008cba;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.content p, .content ul {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Styling for the job role section */
+.job-role {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job-role ul {
+    list-style-type: disc;
+    margin-left: 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.job-role ul li {
+    margin-bottom: 5px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.training-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.date {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* Styling for the co-curricular section */
+.co-curricular {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.co-curricular-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.co-curricular ul {
+    list-style-type: disc;
+    margin-left: 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.co-curricular ul li {
+    margin-bottom: 5px;
+}
+
+.co-curricular .date {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+.footer {
+    background-color: #008cba;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
